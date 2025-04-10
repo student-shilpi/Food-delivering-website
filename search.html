@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="Icon" href="Minimalist Beige Online Fast & Free Delivery Service Logo.jpg"></link>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FOODKART</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 50px;
+      border-radius: 15px;
+      text-align: center;
+      color: white;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .overlay h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .overlay p {
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+
+    .search-box {
+      display: flex;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .search-box input {
+      flex: 1;
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+    }
+
+    .search-box button {
+      background-color: #e23744;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .search-box button:hover {
+      background-color: #c12e3b;
+    }
+
+    @media (max-width: 600px) {
+      .overlay h1 {
+        font-size: 32px;
+      }
+
+      .search-box {
+        flex-direction: column;
+      }
+
+      .search-box button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Discover the best food & drinks</h1>
+    <p>Search for restaurants, cuisines or dishes</p>
+    <div class="search-box">
+      <input type="text" placeholder="Search here..." />
+      <button>Search</button>
+    </div>
+  </div>
+</body>
+</html>

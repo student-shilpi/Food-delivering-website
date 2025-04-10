@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="Icon" href="Minimalist Beige Online Fast & Free Delivery Service Logo.jpg"></link>
+  <title>FOODKART</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+
+    header {
+      background-color: #e23744;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .offers-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .offer-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .offer-card:hover {
+      transform: scale(1.03);
+    }
+
+    .offer-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .offer-details {
+      padding: 15px;
+    }
+
+    .offer-details h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .offer-details p {
+      color: #666;
+      margin: 10px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #ffcc00;
+      color: #333;
+      padding: 5px 10px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FOODKART Offers</h1>
+  </header>
+
+  <section class="offers-container">
+    <div class="offer-card">
+      <img src="https://tb-static.uber.com/prod/image-proc/processed_images/150a1c448aa58f94ff8304d6fda985b1/30be7d11a3ed6f6183354d1933fbb6c7.jpeg" width="300" height="180" alt="Restaurant 1">
+      <div class="offer-details">
+        <h2>Pizza Palace</h2>
+        <p>Flat 40% off on all pizzas</p>
+        <span class="tag">Use code: PIZZA40</span>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="https://tb-static.uber.com/prod/image-proc/processed_images/b5e2e47cc5043e7b2a2505af77da13a7/fb86662148be855d931b37d6c1e5fcbe.webp" width="300" height="180" alt="Restaurant 2">
+      <div class="offer-details">
+        <h2>Sushi Stop</h2>
+        <p>Buy 1 Get 1 Free on Sushi</p>
+        <span class="tag">BOGO</span>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRETx6WJ4bLn_u57brE5yfk8kRkO21agEJR1A&s" width="300" height="180" alt="Restaurant 3">
+      <div class="offer-details">
+        <h2>Burger House</h2>
+        <p>20% off on orders above ₹499</p>
+        <span class="tag">BURGER20</span>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

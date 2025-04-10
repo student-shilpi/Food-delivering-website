@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="Icon" href="Minimalist Beige Online Fast & Free Delivery Service Logo.jpg"></link>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FOODKART Restaurant Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 100%;
+      max-width: 500px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #e23744;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      background: #e23744;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #c7253c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Book a Table</h2>
+    <form>
+      <label for="restaurant">Restaurant</label>
+      <select id="restaurant" name="restaurant">
+        <option value="italian-bistro">Italian Bistro</option>
+        <option value="spice-hub">Spice Hub</option>
+        <option value="sushi-world">Sushi World</option>
+      </select>
+      
+      <label for="Location">Location</label>
+      <input type="Location" id="Location" name="Location">
+
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date">
+
+      <label for="time">Time</label>
+      <input type="time" id="time" name="time">
+
+      <label for="people">Number of People</label>
+      <input type="number" id="people" name="people" min="1" max="20">
+
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="contact">Contact Number</label>
+      <input type="tel" id="contact" name="contact" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+</body>
+</html>

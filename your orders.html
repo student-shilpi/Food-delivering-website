@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="Icon" href="Minimalist Beige Online Fast & Free Delivery Service Logo.jpg"></link>
+  <title>Your Orders - FOODKART</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .orders-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .order {
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+    }
+    .order:last-child {
+      border-bottom: none;
+    }
+    .restaurant {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .items {
+      margin-top: 5px;
+      color: #666;
+    }
+    .status {
+      margin-top: 5px;
+      font-size: 14px;
+      color: green;
+    }
+    .btn {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #e23744;
+      color: white;
+      border: none;
+      border-radius: 5px;
+       cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #c62832;
+    }
+  </style>
+</head>
+<body>
+<div class="orders-container">
+  <h2>Your Orders</h2>
+  
+
+<div class="order">
+    <div class="restaurant">Pizza Nation</div>
+    <div class="items">1x Margherita Pizza, 1x Coke</div>
+    <div class="status">Out for Delivery</div>
+    <button class="btn" onclick="reorder('Pizza Nation')">Reorder</button>
+  </div>
+  
+  <div class="order">
+    <div class="restaurant">The Biryani House</div>
+    <div class="items">1x Chicken Biryani, 1x Raita</div>
+    <div class="status">Cancelled</div>
+    <button class="btn" onclick="reorder('The Biryani House')">Reorder</button>
+  </div>
+</div>
+
+<script>
+  function reorder(restaurant) {
+    alert(Reordering from ${restaurant}...);
+  }
+</script>
+
+</body>
+</html>

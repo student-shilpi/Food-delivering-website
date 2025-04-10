@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="Icon" href="Minimalist Beige Online Fast & Free Delivery Service Logo.jpg"></link>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FOODKART</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #e23744;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .order-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .order-total {
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+    }
+
+    input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .place-order-btn {
+      background-color: #e23744;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s;
+    }
+
+    .place-order-btn:hover {
+      background-color: #c12e3b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Checkout</h2>
+
+    <div class="section">
+      <h3>Order Summary</h3>
+      <div class="order-item">
+        <span>Paneer Butter Masala</span>
+        <span>₹220</span>
+      </div>
+      <div class="order-item">
+        <span>Butter Naan (2)</span>
+        <span>₹80</span>
+      </div>
+      <div class="order-total">
+        <span>Total</span>
+        <span>₹300</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Delivery Address</h3>
+      <input type="text" placeholder="Enter your delivery address" />
+    </div>
+
+    <div class="section">
+      <h3>Payment Method</h3>
+      <select>
+        <option>Credit/Debit Card</option>
+        <option>UPI</option>
+        <option>Cash on Delivery</option>
+        <option>Net Banking</option>
+      </select>
+    </div>
+
+    <button class="place-order-btn">Place Order</button>
+  </div>
+</body>
+</html>

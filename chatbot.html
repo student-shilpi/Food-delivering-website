@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="Icon" href="Minimalist Beige Online Fast & Free Delivery Service Logo.jpg"></link>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FOODKART</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .chat-container {
+      width: 380px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .chat-header {
+      background-color: #ff5722;
+      color: white;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .chat-box {
+      padding: 16px;
+      height: 400px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .message {
+      padding: 10px 14px;
+      border-radius: 20px;
+      max-width: 75%;
+    }
+
+    .bot-message {
+      background-color: #f1f1f1;
+      align-self: flex-start;
+    }
+
+    .user-message {
+      background-color: #ff5722;
+      color: white;
+      align-self: flex-end;
+    }
+
+    .chat-input {
+      display: flex;
+      border-top: 1px solid #ddd;
+    }
+    .chat-input input {
+      flex: 1;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+    }
+
+    .chat-input button {
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      padding: 0 16px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .chat-input button:hover {
+      background-color: #e64a19;
+    }
+  </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">FOODKART CHATBOT</div>
+        <div class="chat-box" id="chat-box">
+          <div class="message bot-message">Hi! Ask me about any Indian food and I'll tell you how it tastes.</div>
+        </div>
+        <div class="chat-input">
+          <input type="text" id="user-input" placeholder="e.g., Biryani, Dosa, Pani Puri">
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    
+      <script>
+        const foodTastes = {
+          biryani: "Biryani is aromatic and spicy, with a rich blend of saffron, herbs, and slow-cooked meat or veggies.",
+          dosa: "Dosa is crispy and slightly tangy, served with coconut chutney and spicy sambar.",
+          'pani puri': "Pani Puri is tangy, spicy, and crunchy – a real explosion of flavors in one bite!",
+          'butter chicken': "Butter Chicken is creamy, mildly spicy, and rich with a tomato-butter base.",
+          'rajma chawal': "Rajma Chawal is comforting and mildly spiced, with a hearty and earthy flavor.",
+          'chole bhature': "Chole Bhature is spicy, tangy, and indulgent with fluffy fried bread and chickpeas.",
+          'idli': "Idli is soft, mild, and slightly sour — perfect with sambar and chutney.",
+          'gulab jamun': "Gulab Jamun is sweet, juicy, and rich — soaked in rose-flavored sugar syrup."
+        };
+    
+        function sendMessage() {
+          const input = document.getElementById("user-input");
+          const userText = input.value.trim();
+          if (!userText) return;
+    
+          const chatBox = document.getElementById("chat-box");
+    
+          const userMsg = document.createElement("div");
+          userMsg.className = "message user-message";
+          userMsg.textContent = userText;
+          chatBox.appendChild(userMsg);
+    
+          const lowerText = userText.toLowerCase();
+          const botReply = foodTastes[lowerText] || "Hmm... I don't know that one yet! Try something else like Dosa, Biryani or Gulab Jamun.";
+    
+          const botMsg = document.createElement("div");
+          botMsg.className = "message bot-message";
+          botMsg.textContent = botReply;
+          chatBox.appendChild(botMsg);
+    
+          input.value = "";
+          chatBox.scrollTop = chatBox.scrollHeight;
+        }
+      </script>
+    </body>
+    </html>
+
+
